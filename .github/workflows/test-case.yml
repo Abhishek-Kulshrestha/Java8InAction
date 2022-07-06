@@ -25,7 +25,7 @@ jobs:
 
       # Maven Build
       - name: GitHub Actions Build Maven project
-        run: mvn -B package --file pom.xml
+        run: mvn -e package --file pom.xml
         
       - name: List current directories
         run: ls -a
